@@ -1,0 +1,156 @@
+
+.row-content{
+    margin:10px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 2px ridge;
+    min-height:40px;
+}
+.root-color{
+  color: var(--bs-orange) !important;
+}
+.bg-color{
+  background: linear-gradient(rgb(255 255 255), rgb(247 148 6)) !important;
+}
+.nav-item:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.footer{
+    background-color: #D1C4E9;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+    
+}
+.jumbotron{
+	padding: 70px 10px 70px 10px;
+	margin: 0px auto;
+	background: #dc5a09ef;
+	color: floralwhite; 
+}
+.address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+.body{
+    padding: 50px 0px 0px 0px;
+     z-index:0;
+
+}
+.navbar-dark{
+    background-color: #110202ef;
+}
+
+.btn-block{
+    align-items: center;
+    justify-content: center;
+    width:200px;
+
+}
+.shift{
+    padding: 18PX;
+
+}
+
+.tab-content{
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:10px;
+}
+
+.margin{
+    margin-left: 120px;
+}
+
+.carousel {
+    background:#110202ef
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+

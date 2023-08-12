@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="img/logopng.png"  />
+    <link rel="canonical" href="/licious-Resturant/">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styleold.css">
+    <!-- endbuild -->
+
+    <title>Licious Restaurant</title>
+</head>
+
+<body>
+
+
+    <!-- navigation bar section -->
+    <!--Navbar-Bootstarp css -->
+   
+    <nav class="navbar text-dark navbar-expand-md fixed top " style="font-family: ProximaNova,arial,Helvetica Neue,sans-serif;">
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="#"><img src="img/savelogheader.png" width="140" height="80" alt="Logo image"> </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-5" id="Navbar">
+                <ul class="flex-md-row flex-column d-flex list-unstyled gap-md-5 gap-3 mx-md-0 mx-3 mt-lg-0 mt-3  p-md-0 p-3 w-100 justify-content-end text-black">
+                    <li class="nav-item   active"><a class="nav-link text-dark fs-5" href="#">
+                        <span class="fa fa-search root-color"></span> Search</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="./aboutus.html"><span
+                                class="fa fa-gifts root-color "></span> Offers</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fs-5" href="product.html">
+                        <span class="fa fa-thin fa-birthday-cake fa-lg  root-color"></span>
+                            New Bake</a></li>
+                    <li class="nav-item  "><a class="nav-link text-dark fs-5" href="contactus.html"><span
+                                class="fa fa-user fa-lg root-color"></span> Contact</a></li>
+                </ul>
+                  
+            </div>
+        </div>
+    </nav>  
+    <!-- Content -->
+    
+    <!-- header section 
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-6 ">
+                    <h1>Licious Restaurant</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                        lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+
+                <div class="col-sm-6 m-auto d-flex justify-content-center">
+                    <img src="logo.png"  alt="pizza">
+                </div>
+            </div>
+        </div>
+    </header>-->
+    
+
+
+    <div id="loginModal" class="modal fade modal-signin py-5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md" >
+            <div class="modal-content rounded-5" style=" background-color:rgb(247, 234, 234)">
+                <div class="modal-header">
+                    <h3 class="modal-title p-2">Log in </h3>
+                    <button type="button" class="btn-close pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <form class="">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                          <label for="floatingPassword">Password</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                        <hr class="my-4">
+                        <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                          <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                          Sign up with Twitter
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                          <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                          Sign up with Facebook
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                          <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                          Sign up with GitHub
+                        </button>
+                      </form>
+                </div>
+                <!-- end of modal body -->
+            </div>
+            <!-- end of modal content -->
+        </div>
+        <!-- end of modal dialog -->
+    </div>
+    <!-- end of login page -->
+
+    <!--modal of signup page-->
+
+    <div id="signupmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content rounded-5"  style=" background-color:rgb(247, 234, 234)">
+                <div class="modal-header">
+                    <h4 class="modal-title p-2">Signup </h4>
+                    <button type="button" class="btn-close pe-4" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="">
+                        <div class="form-floating mb-3">
+                          <input type="text"  class="form-control rounded-3 " id="floatingUser" placeholder="name@example.com">
+                          <label for="floatingInput">User Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                          <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder=" cnfPassword">
+                          <label for="floatingPassword">Confirm Password</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                            Privacy</a>.</p>
+                        <hr class="my-4">
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of signup page-->
+
+    <!-- body section  -->
+    <div class="container">
+    <!-- start of carousel -->
+        <div class="w-100 mt-5 mb-3 px-2  d-flex justify-content-between ">
+            <h4 class="text-black fw-bold">Choose Any One</h2>
+            <div>
+                <button class=" btn btn-primary rounded-circle" id="btnL">
+                    <span class="fa fa-arrow-left text-white"></span>
+                </button>
+                <button class=" btn btn-primary rounded-circle" id="btnR">
+                    <span class="fa fa-arrow-right text-white"></span>
+                </button>
+            </div>
+
+        </div>
+        <div class="d-flex overflow-hidden gap-2 position-relative">
+            <div class="rows d-flex  position-relative flex-nowrap overflow-hidden">
+                <div class="col">
+                    <div id="mycarousel" class ="rounded-3" style="width: 250px;height:200px;"  >
+                       <div class="d-flex justify-content-center  bg-color flex-column align-content-center h-100">
+                        <img src="img/resturant.jpg" class="img-fluid align-self-center " width="150px" alt="">
+                           <h4 class="text-white text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Food</h4>
+                       </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="mycarousel"   style="width: 250px;height:200px;" >
+                        <div class="d-flex justify-content-center bg-color  flex-column align-content-center h-100">
+                            <img src="img/delivery.jpg" class="img-fluid align-self-center " width="150px" alt="">
+                            <h4 class="text-center text-white" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Delivery</h4>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="mycarousel"    style="width: 250px;height:200px;" >
+                        <div class="d-flex justify-content-center  bg-color flex-column align-content-center h-100">
+                            <img src="img/dineout.jpg" class="img-fluid align-self-center " width="150px" alt="">
+                            <h4 class="text-white text-center " style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Dine Out</h4>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="mycarousel"   style="width: 250px;height:200px;" >
+                        <div class="d-flex justify-content-center  bg-color flex-column align-content-center h-100">
+                            <img src="img/parcel.jpg" class="img-fluid align-self-center " width="150px" alt="">
+                            <h4 class="text-white text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Food Court</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="mycarousel" style="width: 250px;height:200px;" >
+                        <div class="d-flex justify-content-center  bg-color flex-column align-content-center h-100">
+                            <img src="img/contiental.jpg" class="img-fluid align-self-center " width="150px" alt="">
+                            <h4 class="text-white text-center" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Contiental Food</h4>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+        <style>
+            .rows{
+                cursor: grab;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
+      
+        <script>
+
+            var btnL = document.getElementById('btnL');
+            var btnR = document.getElementById('btnR');
+            // take full lengt of Scroll Length
+            document.addEventListener("DOMContentLoaded", function () {
+                var scroll   = document.querySelector('.rows');
+                var scroll_length = scroll.scrollWidth - scroll.clientWidth;
+                var active = false;
+                var startX;
+                var leftslide;
+                
+                scroll.addEventListener('mousedown', (e) =>  {
+                    active = true;
+                    startX = e.pageX - scroll.offsetLeft;
+                    console.log(startX);
+                    leftslide = scroll.scrollLeft;
+                    scroll.style.cursor = 'grabbing';
+                    scroll.style.userSelect = 'none';
+                });
+
+                scroll.addEventListener('mousemove', (e) =>{
+                    if(!active) return;
+                    e.preventDefault();
+                    const x = e.pageX - scroll.offsetLeft;
+                    const walk = (x - startX)*3 ;
+                
+                    scroll.scrollLeft = leftslide - walk;
+                });     
+
+                scroll.addEventListener('mouseup', () => {
+                    active =  false;
+                    scroll.style.cursor = 'grab';
+                    scroll.style.removeProperty('user-select');
+                });                              
+                
+                function checkScroll() {
+                    const currentScroll = scroll.scrollLeft;
+                 
+                    if (currentScroll === 0) {
+                        btnL.setAttribute("disabled", "true");
+                        btnR.removeAttribute("disabled");
+                    } else if (currentScroll === scroll_length) {
+                        
+                            btnR.setAttribute("disabled", "true");
+                            btnL.removeAttribute("disabled");
+                    } else {
+                        btnL.removeAttribute("disabled");
+                        btnR.removeAttribute("disabled");
+                    }
+                }
+
+                scroll.addEventListener("scroll", checkScroll);
+                scroll.addEventListener("drag", checkScroll);
+                window.addEventListener("resize", checkScroll);
+                checkScroll();
+
+                        function leftScroll() {
+                           
+                            scroll.scrollBy({
+                            left: -200,
+                            behavior: "smooth"
+                            });
+                        }
+
+                        function rightScroll() {
+                           
+                            scroll.scrollBy({
+                            left: 200,
+                            behavior: "smooth"
+                            });
+                         }
+
+                    btnL.addEventListener("click", leftScroll);
+                    btnR.addEventListener("click", rightScroll);
+                   
+             });
+
+        </script>
+
+        <!-- end of carousel -->
+        <div class="row row-content">
+           
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-12 col-sm-4  col-md-3">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="col col-sm col-md">
+
+                <div class="media">
+
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
+                            different salads, six enticing appetizers, six main entrees and five choicest desserts. Free
+                            flowing bubbly and soft drinks. All for just $19.99 per person </p>
+
+                    </div>
+                    <img class=" d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer section-->
+        <footer class="footer mb-auto mt-auto">
+            <div class="container mb-auto mt-auto ">
+                <div class="row">
+                    <div class="col-4 offset-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./aboutus.html">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-7 col-sm-5">
+                        <h5>Our Address</h5>
+                        <address>
+                            121,Kamla nagar<br>
+                            Karul Bagh,Delhi-110007<br>
+                            <br>
+                            <i class="fa fa-phone fa-lg"></i>:+91 999900088<br>
+                            <i class="fa fa-fax fa-lg"></i>:+91 8899900990<br>
+                            <i class="fa fa-envelope fa-lg"></i>:<a
+                                href="mailto:confusion@food.net">confusion@food.net</a>
+                        </address>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div>
+                            <a class="btn tn-social-icon btn-instagram" href="http://google.com/+"><i
+                                    class="fa fa-instagram fa-lg"></i></a>
+                            <a class="btn tn-social-icon btn-facebook" href="http://www.facebook.com/"><i
+                                    class="fa fa-facebook fa-lg"></i></a>
+                            <a class="btn tn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                    class="fa fa-linkedin fa-lg"></i></a>
+                            <a class="btn tn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                    class="fa fa-twitter fa-lg"></i></a>
+                            <a class="btn tn-social-icon btn-youtube" href="http://youtube.com/"><i
+                                    class="fa fa-youtube fa-lg"></i></a>
+                            <a class="btn tn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- reserv form-->
+    <div id="reservetable" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="reserve.php" method="post">
+                        <div class="form-group row ">
+                            <label for="guest" class="col-12 col-md-2 mr-sm-4">Number of Guests
+                            <div class="col-12  col-md-7" id="guest">
+                                <input type="radio" value="1" name="guests"> 1
+
+                                <input type="radio" value="2" name="guests"> 2
+
+                                <input type="radio" value="3" name="guests"> 3
+
+                                <input type="radio" value="4" name="guests"> 4
+
+                                <input type="radio" value="5" name="guests"> 5
+
+                                <input type="radio" value="6" name="guests"> 6
+
+                            </div> </label>
+                        </div>
+                        <div class="form-row mb-3">
+                            <label class="col-12 col-md-2 mb-auto">Section:</label>
+                            <div class="row ml-4  ">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" value="Non smoking" name="section" id="option1"
+                                            checked>Non Smoking</label>
+                                    <label class="btn btn-danger ">
+                                        <input type="radio" value="Smoking" name="section" id="option2">Smoking</label>
+
+                                </div>
+                                <div class="form-row mb-auto">
+                                    <label for="dated" class=" col-12 col-md-2 mb-auto">Date and Time
+                                    <div class=" row row-col-10 mb-auto">
+                                        <div class="col-md-5 ml-3 ">
+                                            <input type="date" name="date" id="dated">
+                            
+                                        </div>
+                                        <div class=" col-md-4 ml-5 mr-auto">
+                                            <input type="time" name="time" id="time">
+                            
+                                        </div>
+                                    </div>
+                                </label>
+                            
+                                </div>
+                            
+                                <div class="form-row mt-5 margin">
+                                    <button type="button" data-dismiss="modal" class="btn btn-secondary  ml-4">Cancel</button>
+                                    <button type="submit" class="btn btn-primary ml-2">Reserve</button>
+                                </div>
+                                </div>
+                                </div>
+                            </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    <!-- reserve form end-->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+      
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <!-- endbuild -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
